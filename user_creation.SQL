@@ -1,16 +1,16 @@
-USING joe_lai_LiMao
+USE joe_lai_LiMao
 
-CREATE TABLE users
+CREATE TABLE ten_users
 (
   user_id char(32),
   family_name char(32),
   given_name char(32),
   gender int,
   birth_date date,
-  outer int,
-  inner int,
+  outer_score int,
+  inner_score int,
   energy int,
   quote varchar(128),
-  latitude double,
-  longitude double
+  latitude float(53),
+  longitude float(53)
 );
