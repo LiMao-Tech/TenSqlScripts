@@ -6,6 +6,7 @@ CREATE TABLE ten_users
   user_name char(32) NOT NULL,
   gender int NOT NULL, # 0 is male, 1 is female
   birth_date date NOT NULL,
+  joined_data date NOT NULL,
   p_coin money NOT NULL,
   outer_score int NOT NULL,
   inner_score int NOT NULL,
