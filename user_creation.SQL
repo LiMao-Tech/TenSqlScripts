@@ -2,7 +2,7 @@ USE joe_lai_LiMao
 
 CREATE TABLE ten_users
 (
-  user_index int PRIMARY KEY,
+  user_index int IDENTITY(1,1) PRIMARY KEY,
   user_id nchar(32) NOT NULL UNIQUE, 
   user_name nchar(32) NOT NULL,
   gender int NOT NULL, -- is male, 1 is female
