@@ -10,7 +10,7 @@ CREATE TABLE ten_users
   p_coin money NOT NULL,
   outer_score int NOT NULL,
   inner_score int NOT NULL,
-  energy int NOT NULL,
+  energy int NOT NULL, 
   quote nchar(128),
   latitude float(53),
   longitude float(53)
