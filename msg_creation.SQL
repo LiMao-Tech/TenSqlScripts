@@ -1,4 +1,3 @@
-USE joe_lai_LiMao
 
 CREATE TABLE Msgs
 (

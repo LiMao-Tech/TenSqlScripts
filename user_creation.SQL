@@ -1,19 +1,22 @@
-USE joe_lai_LiMao
-
-CREATE TABLE TenUsers
+CREATE TABLE limao.TenUsers
 (
-  user_index int IDENTITY(1,1) PRIMARY KEY,
-  user_id nvarchar(32) NOT NULL UNIQUE, 
-  user_name nvarchar(32) NOT NULL,
-  gender tinyint NOT NULL, -- is male, 1 is female
-  birth_date date NOT NULL,
-  joined_date date NOT NULL,
-  last_login_datetime datetime NOT NULL,
-  p_coin money NOT NULL,
-  outer_score int NOT NULL,
-  inner_score int NOT NULL,
-  energy int NOT NULL,
-  quote nvarchar(128),
-  latitude float(53),
-  longitude float(53)
+	UserIndex int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	UserName nvarchar(32) NOT NULL,
+
+	PhoneType tinyint NOT NULL, -- 0 for iPhone. 1 for Android devices
+	Gender tinyint NOT NULL, -- is male, 1 is female
+
+	Birthday date NOT NULL,
+	JoinedDate date NOT NULL,
+
+	PCoin money NOT NULL,
+
+	OuterScore int NOT NULL,
+	InnerScore int NOT NULL,
+	Energy int NOT NULL,
+
+	Hobby nvarchar(128),
+	Quote nvarchar(128),
+	Lati float(53),
+	Longi float(53)
 );
