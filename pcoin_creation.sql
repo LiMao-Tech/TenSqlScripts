@@ -1,10 +1,10 @@
 
-CREATE TABLE PcoinTrans
+CREATE TABLE limao.PcoinTrans
 (
-  pcoin_index int IDENTITY(1,1) PRIMARY KEY,
-  pcoin_sender int NOT NULL,
-  pcoin_receiver int NOT NULL,
-  pcoin_amount money NOT NULL,
-  pcoin_time datetime NOT NULL,
-  pcoin_note nvarchar(128) NOT NULL
+  PCoinIndex int IDENTITY(1,1) PRIMARY KEY,
+  Sender int NOT NULL,
+  Receiver int NOT NULL,
+  TransAmount money NOT NULL,
+  TransTime datetime NOT NULL,
+  Note nvarchar(128) NOT NULL
 );

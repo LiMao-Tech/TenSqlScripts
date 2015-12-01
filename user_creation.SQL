@@ -15,6 +15,7 @@ CREATE TABLE limao.TenUsers
 	InnerScore int NOT NULL,
 	Energy int NOT NULL,
 
+	ProfileUrl nvarchar (256),
 	Hobby nvarchar(128),
 	Quote nvarchar(128),
 	Lati float(53),

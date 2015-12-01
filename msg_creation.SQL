@@ -1,11 +1,13 @@
 
-CREATE TABLE Msgs
+CREATE TABLE limao.TenMsgs
 (
-  msg_index int IDENTITY(1,1) PRIMARY KEY,
-  msg_sender int NOT NULL,
-  msg_receiver int NOT NULL,
-  msg_is_locked bit NOT NULL,
-  msg_type tinyint NOT NULL, -- 0 is text msg, -- 1 is image
-  msg_time datetime NOT NULL,
-  msg_content nvarchar(512) NOT NULL
+  MsgIndex int IDENTITY(1,1) PRIMARY KEY,
+  Sender int NOT NULL,
+  Receiver int NOT NULL,
+  PhoneType tinyint NOT NULL, -- 0 for iPhone. 1 for Android devices
+  IsLocked bit NOT NULL,
+
+  MsgType tinyint NOT NULL, -- 0 is text msg, -- 1 is image
+  MsgTime datetime NOT NULL,
+  MsgContent nvarchar(512) NOT NULL
 );
