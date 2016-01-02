@@ -66,3 +66,13 @@ CREATE TABLE [limao].[PCoinTrans] (
     [Note]      NVARCHAR (MAX) NULL,
     CONSTRAINT [PK_dbo.PCoinTrans] PRIMARY KEY CLUSTERED ([ID] ASC)
 );
+
+CREATE TABLE [limao].[ImageUnlockers] (
+    [ID]         INT   IDENTITY (1, 1) NOT NULL,
+    [TenImageID] INT   NOT NULL,
+    [Owner]      INT   NOT NULL,
+    [Unlocker]   INT   NOT NULL,
+    [Pcoin]      MONEY NOT NULL,
+    [UnlockTime] DATE  NOT NULL,
+    CONSTRAINT [PK_dbo.ImageUnlockers] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
